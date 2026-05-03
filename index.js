@@ -35,13 +35,13 @@ const client = new Client({
     ]
 });
 
-client.once('ready', () => {
+client.once('clientReady', () => {
     console.log(`✅ Logged in as ${client.user.tag}`);
 });
 
-// Command: !gising
+// Command: !joinhive3
 client.on('messageCreate', async (message) => {
-    if (message.content === '!gising') {
+    if (message.content === '!joinhive3') {
         if (message.author.id !== OWNER_ID) {
             return message.reply('❌ Only the bot owner can use this command.');
         }
